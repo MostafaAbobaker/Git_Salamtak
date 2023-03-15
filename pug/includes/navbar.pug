@@ -1,0 +1,56 @@
+//- Start Navbar 
+nav.navbar.navbar-expand-lg.text-white
+  .container
+    a.navbar-brand(href='index.html') 
+      img(src="../assets/images/Logo.svg", alt="")
+    button.navbar-toggler(type='button' data-bs-toggle='collapse' data-bs-target='#navbarSupportedContent' aria-controls='navbarSupportedContent' aria-expanded='false' aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarSupportedContent.collapse.navbar-collapse
+      ul.navbar-nav.w-100.justify-content-end
+        li.nav-item
+          a.nav-link( href='index.html') الرئيسية
+        li.nav-item
+          a.nav-link(href='RegistrationProvider.html') انضم الينا
+        li.nav-item
+          a.nav-link(href='#' data-bs-toggle="modal" data-bs-target="#exampleModal")  دخول
+        li.nav-item
+          a.nav-link(href='#') اتصل بنا 
+        li.nav-item
+          a.nav-link(href='#') English  
+        li.nav-item.dropdown
+          a.nav-link.dropdown-toggle(href='#' role='button' data-bs-toggle='dropdown' aria-expanded='false')
+            i.fa-solid.fa-cart-shopping
+
+          ul.dropdown-menu
+            li
+              a.dropdown-item(href='#') Action
+            li
+              a.dropdown-item(href='#') Another action
+            li
+              hr.dropdown-divider
+            li
+              a.dropdown-item(href='#') Something else here
+
+        li.nav-item.user-profile.dropdown
+          a.nav-link.dropdown-toggle(href='#' data-bs-toggle='dropdown' aria-expanded='false')
+            img(src="../assets/images/user.jpg", alt="")
+            span.text Mostafa Abobaker
+          ul.dropdown-menu
+            li
+              a.dropdown-item(href='ProfileData.html') 
+                i.fa-solid.fa-user
+                |الملف الشخصى
+            li
+              a.dropdown-item(href='#' data-bs-toggle="modal" data-bs-target="#notificationsModal")
+                i.fa-solid.fa-bell
+                | اشعارات 
+            li
+              a.dropdown-item(href='#') 
+                i.fa-regular.fa-calendar-check
+                | إدارة الحجوزات 
+            li
+              hr.dropdown-divider
+            li
+              a.dropdown-item(href='#') 
+                i.fa-solid.fa-right-from-bracket
+                | خروج

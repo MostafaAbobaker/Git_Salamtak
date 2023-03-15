@@ -1,0 +1,234 @@
+doctype html
+html(lang="ar" dir="rtl")
+  head
+    include includes/head.pug
+  body 
+    //- Start Navbar 
+    include includes/navbar.pug
+    //- End Navbar
+    //- Start Main Slider 
+    section.main-slider 
+      .filter-tap
+        .container 
+          ul#myTab.nav.nav-tabs(role='tablist')
+            li.nav-item.col-3(role='presentation')
+              a#Doctor-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#Doctor-tab-pane' type='button' role='tab' aria-controls='Doctor-tab-pane' aria-selected='true')
+                .image 
+                  include ../assets/images/Doctor.svg
+                .text  احجز دكتور
+            li.nav-item.col-3(role='presentation')
+              a#lab-tab.nav-link(data-bs-toggle='tab' data-bs-target='#lab-tab-pane' type='button' role='tab' aria-controls='lab-tab-pane' aria-selected='false') 
+                .image 
+                  include ../assets/images/lab.svg
+                .text  احجز معمل
+            li.nav-item.col-3(role='presentation')
+              a#xray-tab.nav-link(data-bs-toggle='tab' data-bs-target='#xray-tab-pane' type='button' role='tab' aria-controls='xray-tab-pane' aria-selected='false')  
+                .image 
+                  include ../assets/images/xray.svg
+                .text  احجز أشعة
+            li.nav-item.col-3(role='presentation')
+              a#pharmacy-tab.nav-link(data-bs-toggle='tab' data-bs-target='#pharmacy-tab-pane' type='button' role='tab' aria-controls='pharmacy-tab-pane' aria-selected='false' ) 
+                .image 
+                  include ../assets/images/pharmacy.svg
+                .text   صيدلية
+          #myTabContent.tab-content
+            #Doctor-tab-pane.tab-pane.fade.show.active.col-12(role='tabpanel' aria-labelledby='Doctor-tab' tabindex='0') 
+              .form-doctor.d-flex
+                .input-group.mx-2.d-flex
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-stethoscope
+                  label(for="") ابحث عن دكتور 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار التخصص...
+                    option(value='1') باطنة
+                    option(value='2') عظام
+                    option(value='3') عيون
+
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-map-location-dot
+                  label(for="") ابحث عن محافظة 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار المحافظة...
+                    option(value='1') القاهرة
+                    option(value='2') الجيزة
+                    option(value='3') اسكندرية
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-location-dot
+                  label(for="") ابحث عن منطقة 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار المنطقة...
+                    option(value='1') فيصل
+                    option(value='2') المنيب
+                    option(value='3') امبابة 
+                    option(value='3') المهندسين 
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-user-doctor
+                  label(for="") ابحث باسم الطبيب 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار الطبيب...
+                    option(value='1') احمد محمد محمود
+                    option(value='2') حسين سيد مراد
+                    option(value='3') وفاء على حسن 
+                    option(value='3') سعاد امام عبد المنعم 
+                button.btn 
+                  i.fa-solid.fa-magnifying-glass
+                  | بحث
+              
+            #lab-tab-pane.tab-pane.fade.col-12(role='tabpanel' aria-labelledby='lab-tab' tabindex='0') 
+              .form-doctor.d-flex
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-stethoscope
+                  label(for="") ابحث عن معمل
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار المعمل...
+                    option(value='1') البرج
+                    option(value='2') المختبر
+                    option(value='3') رويل لاب
+
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-map-location-dot
+                  label(for="") ابحث عن محافظة 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار المحافظة...
+                    option(value='1') القاهرة
+                    option(value='2') الجيزة
+                    option(value='3') اسكندرية
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-location-dot
+                  label(for="") ابحث عن منطقة 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار المنطقة...
+                    option(value='1') فيصل
+                    option(value='2') المنيب
+                    option(value='3') امبابة 
+                    option(value='3') المهندسين 
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-user-doctor
+                  label(for="") ابحث تحليل 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار التحليل...
+                    option(value='1') CBC
+                    option(value='2') تحاليل مرض السكر
+                    option(value='3') تحاليل وظائف الكبد
+                    option(value='3') تحاليل وظائف الكلى
+                button.btn 
+                  i.fa-solid.fa-magnifying-glass
+                  | بحث
+              
+            #xray-tab-pane.tab-pane.fade.col-12(role='tabpanel' aria-labelledby='xray-tab' tabindex='0') 
+              .form-doctor.d-flex
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-stethoscope
+                  label(for="") ابحث عن مركز
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار المركز...
+                    option(value='1') مركز كايرو سكان
+                    option(value='2') مركز الف اسكان
+                    option(value='3') مركز تكنوسكان
+
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-map-location-dot
+                  label(for="") ابحث عن محافظة 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار المحافظة...
+                    option(value='1') القاهرة
+                    option(value='2') الجيزة
+                    option(value='3') اسكندرية
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-location-dot
+                  label(for="") ابحث عن منطقة 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار المنطقة...
+                    option(value='1') فيصل
+                    option(value='2') المنيب
+                    option(value='3') امبابة 
+                    option(value='3') المهندسين 
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-user-doctor
+                  label(for="") ابحث اشعة 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار اشعة...
+                    option(value='1') التصوير بالرنين المغناطيسي للعمود الفقري 
+                    option(value='2') الأشعة السينية
+                    option(value='3')  الموجات فوق الصوتية للثدي
+                    option(value='3')  موجات فوق صوتية على القلب  
+                button.btn 
+                  i.fa-solid.fa-magnifying-glass
+                  | بحث
+              
+            #pharmacy-tab-pane.tab-pane.fade.col-12(role='tabpanel' aria-labelledby='pharmacy-tab' tabindex='0') 
+              .form-doctor.d-flex
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-stethoscope
+                  label(for="") ابحث عن صيدلية
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار الصيدلية...
+                    option(value='1') صيدلية العزبي
+                    option(value='2') صيدليات مصر
+                    option(value='3') صيدليات 19019
+
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-map-location-dot
+                  label(for="") ابحث عن محافظة 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار المحافظة...
+                    option(value='1') القاهرة
+                    option(value='2') الجيزة
+                    option(value='3') اسكندرية
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-location-dot
+                  label(for="") ابحث عن منطقة 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار المنطقة...
+                    option(value='1') فيصل
+                    option(value='2') المنيب
+                    option(value='3') امبابة 
+                    option(value='3') المهندسين 
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-user-doctor
+                  label(for="") ابحث دواء 
+                  select#inputGroupSelect01.form-select.js-example-basic-single(data-live-search="true")
+                    option(selected='') اختار دواء...
+                    option(value='1') oplex 
+                    option(value='2') Co-trimoxazole 
+                    option(value='3')  الموجات فوق الصوتية للثدي
+                    option(value='3')  موجات فوق صوتية على القلب  
+                .input-group.mx-2
+                  span#basic-addon1.input-group-text 
+                    i.fa-solid.fa-file-medical
+                  label(for="") رفع الروشته
+                  input#inputGroupFile01.form-control(type='file')
+                
+
+                button.btn 
+                  i.fa-solid.fa-magnifying-glass
+                  | بحث
+              
+
+    //- End Main Slider 
+          
+
+
+
+
+
+
+    include includes/Modal
+    include includes/footer
+
+     

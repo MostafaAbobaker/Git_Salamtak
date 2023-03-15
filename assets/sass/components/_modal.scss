@@ -1,0 +1,132 @@
+// Start Modal
+.modal {
+  .modal-dialog {
+    width: 600px !important;
+    max-width: none !important;
+
+    .modal-content {
+      width: 600px !important;
+    }
+  }
+
+  .modal-header {
+    background-color: $aColor;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    padding: 10px;
+
+    h1 {
+      display: flex;
+      justify-content: center;
+      margin: 0;
+      font-weight: bold;
+    }
+
+    .icon {
+      margin-inline-end: 10px;
+    }
+  }
+
+  .modal-body {
+    .box-log {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      text-align: center;
+      padding: 10px;
+
+      .image {
+        color: $aColor;
+        margin-bottom: 15px;
+
+        i {
+          font-size: 72px;
+        }
+      }
+
+      .box-body {
+        display: flex;
+        flex-direction: column;
+        justify-content: space-between;
+
+        align-items: center;
+
+        .text {
+          font-size: 0.8em;
+          margin: 10px 0;
+        }
+
+        .btn {
+          background-color: $sColor;
+          color: #fff;
+          transition: all 0.4s ease-in-out;
+          font-weight: bold;
+
+          &:hover {
+            transform: scale(1.1);
+          }
+        }
+
+      }
+    }
+
+    .col-6 {
+      &:first-child {
+        border-inline-end: 2px solid $aColor;
+      }
+    }
+  }
+
+  &.notifications {
+    .noti-box {
+      border: 1px solid $sColor;
+      background-color: rgba($sColor, 0.2);
+      display: flex;
+      border-radius: 5px;
+      margin-bottom: 5px;
+
+      .image {
+        width: 100px;
+        background-color: $sColor;
+        color: #fff;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        border-radius: 0 5px 5px 0;
+
+        i {
+          font-size: 32px;
+        }
+      }
+
+      .noti-body {
+        padding: 5px 10px;
+        position: relative;
+        width: calc(100% - 50px);
+
+        .title {
+          font-weight: bold;
+          color: $mColor;
+          margin-bottom: 5px;
+        }
+
+        .text {
+          margin-bottom: 2px;
+          font-size: .8em;
+          padding-inline-start: 10px;
+        }
+
+        .date {
+          position: absolute;
+          bottom: 10px;
+          inset-inline-end: 10px;
+          font-size: .8em;
+          font-weight: bold;
+        }
+      }
+    }
+  }
+}
+
+// End Modal

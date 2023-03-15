@@ -1,0 +1,246 @@
+-var title = "ProfileData "
+doctype html
+html(lang="ar" dir="rtl")
+  head
+    include includes/head.pug
+  body 
+    //- Start Navbar 
+    include includes/navbar.pug
+    //- End Navbar
+    //- Start ProfileData
+    .ProfileData-page.registration-page
+      .container
+        .registration-box
+          h3.text-center.mb-1 الملف الشخصى
+          .image-upload
+            .avatar-upload
+              .avatar-edit
+                input#imageUpload(type='file' accept='.png, .jpg, .jpeg')
+                label(for='imageUpload')
+              .avatar-preview
+                #imagePreview(style='background-image: url(./assets/images/anonymous-sec-whistleblower.jpg);')
+          .content-form
+            .Tap-Global
+              ul#myTab.nav.nav-tabs(role='tablist')
+                li.nav-item(role='presentation')
+                  button#home-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#home-tab-pane' type='button' role='tab' aria-controls='home-tab-pane' aria-selected='true') المعلومات الاساسية
+                li.nav-item(role='presentation')
+                  button#profile-tab.nav-link(data-bs-toggle='tab' data-bs-target='#contact-tab-pane' type='button' role='tab' aria-controls='profile-tab-pane' aria-selected='false') بيانات الاتصال
+                li.nav-item(role='presentation')
+                  button#profile-tab.nav-link(data-bs-toggle='tab' data-bs-target='#profile-tab-pane' type='button' role='tab' aria-controls='profile-tab-pane' aria-selected='false') المعلومات الطبية
+                li.nav-item(role='presentation')
+                  button#contact-tab.nav-link(data-bs-toggle='tab' data-bs-target='#Emergency-tab-pane' type='button' role='tab' aria-controls='contact-tab-pane' aria-selected='false')  الطوارئ
+                li.nav-item(role='presentation')
+                  button#contact-tab.nav-link(data-bs-toggle='tab' data-bs-target='#Comapny-tab-pane' type='button' role='tab' aria-controls='contact-tab-pane' aria-selected='false')  المعلومات التأمين
+                li.nav-item(role='presentation')
+                  button#contact-tab.nav-link(data-bs-toggle='tab' data-bs-target='#log-tab-pane' type='button' role='tab' aria-controls='contact-tab-pane' aria-selected='false')  بيانات التسجيل 
+                
+              #myTabContent.tab-content
+                #home-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='home-tab' tabindex='0') 
+                  h4.border-bottom.border-2.pb-2.mb-2.mt-2.fw-bold المعلومات الاساسية
+                  .container-fluid
+                    .row
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') الاسم بالكامل
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') الجنسية
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') الوظيفة
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      //- .col-lg-4.col-md-6.col-sm-12
+                      //-   .form-group
+                      //-     label.mb-1(for='exampleInputEmail1') المؤهل
+                      //-     input#exampleInputEmail1.form-control(type='text' required='')
+                      //-     small.form-text.text-required *
+                   
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group.form-date-group
+                          label.mb-1(for='exampleInputEmail1') تاريخ الميلاد
+                          input#exampleInputEmail1.form-control.form-date-control(type='date')
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') النوع
+                          .form-group
+                            .form-check.form-check-inline
+                              input#Man.form-check-input(type='radio' name='Man' value='option1')
+                              label.form-check-label(for='Man') ذكر
+                            .form-check.form-check-inline
+                              input#woman.form-check-input(type='radio' name='woman' value='option2')
+                              label.form-check-label(for='woman') إنثى
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') الحالة الاجتماعية
+                          select#exampleFormControlSelect1.form-control
+                            option اعزب
+                            option متزوج
+                            option ارمل
+                            option مطلق
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1')  نوع الهوية
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') رقم الهوية
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') المؤهل
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *      
+                #contact-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab' tabindex='0') 
+                  h4.border-bottom.border-2.pb-2.mb-2.mt-2.fw-bold بيانات الاتصال
+                  .container-fluid
+                    .row
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1')  رقم المنزل
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') رقم المحمول
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') رقم محمول اخر
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                #profile-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='profile-tab' tabindex='0') 
+                  h4.border-bottom.border-2.pb-2.mb-2.mt-2.fw-bold المعلومات الطبية
+                  .container-fluid
+                    .row
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1')  الطول
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') الوزن
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') امراض مزمنة
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1')  حساسية مزمنة
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1')  حساسية دواء
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') هل يوجد اعاقة
+                          .form-group
+                            .form-check.form-check-inline
+                              input#Man.form-check-input(type='radio' name='Man' value='option1')
+                              label.form-check-label(for='Man') نعم
+                            .form-check.form-check-inline
+                              input#woman.form-check-input(type='radio' name='woman' value='option2')
+                              label.form-check-label(for='woman') لا    
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') نوع الاعاقة
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') هل يوجد عمليات سابقة
+                          .form-group
+                            .form-check.form-check-inline
+                              input#Man.form-check-input(type='radio' name='Man' value='option1')
+                              label.form-check-label(for='Man') نعم
+                            .form-check.form-check-inline
+                              input#woman.form-check-input(type='radio' name='woman' value='option2')
+                              label.form-check-label(for='woman') لا       
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') اسم العملية
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      
+                #Emergency-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab' tabindex='0') 
+                  h4.border-bottom.border-2.pb-2.mb-2.mt-2.fw-bold بيانات الطوارئ
+                  .container-fluid
+                    .row
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1')  اسم الشخص ( للتواصل في حالة الطوارئ )  
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') رقم الهاتف الشخص
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') رقم الهاتف الشخص اخر
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') صالة القاربة
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                #Comapny-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab' tabindex='0') 
+                  h4.border-bottom.border-2.pb-2.mb-2.mt-2.fw-bold المعلومات التأمين
+                  .container-fluid
+                    .row
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1')  شركة التأمين
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') التعاقد
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') نوع التعاقد
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                #log-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='contact-tab' tabindex='0')  
+                  h4.border-bottom.border-2.pb-2.mb-2.mt-2.fw-bold بيانات التسجيل
+                  .container-fluid
+                    .row
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1')  الرقم السرى الحالى
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') الرقم السرى جديد
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+                      .col-lg-4.col-md-6.col-sm-12.mb-3
+                        .form-group
+                          label.mb-1(for='exampleInputEmail1') تأكيد السرى
+                          input#exampleInputEmail1.form-control(type='text' required='')
+                          small.form-text.text-required *
+
+            
+    //- End ProfileData
+    include includes/footer      
+

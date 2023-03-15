@@ -1,0 +1,137 @@
+doctype html
+html(lang="ar" dir="rtl")
+  head
+    include includes/head.pug
+  body 
+    //- Start Login
+    .log-page 
+      .container 
+        .col-6.text-center
+          .form-action 
+            a.image.mb-3.d-block(href="index.html") 
+              img(src="../assets/images/logo.png", alt="")
+            
+            ul#myTab.nav.nav-tabs(role='tablist')
+              li.nav-item.col-6(role='presentation')
+                a#log-tab.nav-link.active(data-bs-toggle='tab' data-bs-target='#log-tab-pane' type='button' role='tab' aria-controls='log-tab-pane' aria-selected='true') 
+                  .image 
+                      i.fas.fa-sign-in-alt 
+                  .text دخول 
+                  
+              li.nav-item.col-6(role='presentation')
+                a#Sign-tab.nav-link(data-bs-toggle='tab' data-bs-target='#Sign-tab-pane' type='button' role='tab' aria-controls='Sign-tab-pane' aria-selected='false') 
+                  .image 
+                    i.fas.fa-user-plus
+                  .text تسجيل 
+            #myTabContent.tab-content
+              #log-tab-pane.tab-pane.fade.show.active(role='tabpanel' aria-labelledby='log-tab' tabindex='0') 
+                h4 مرحبا بعودتك 
+                p الرجاء إدخال التفاصيل الخاصة بك
+                form.w-100
+                  .input-group.mb-3
+                    span#basic-addon1.input-group-text 
+                      i.fas.fa-envelope
+                    input.form-control(type='email' placeholder='الايميل' aria-label='Username' aria-describedby='basic-addon1')
+                  .input-group.mb-3
+                    span#basic-addon1.input-group-text
+                      i.fas.fa-key
+                    input.form-control(type='password' placeholder='الرقم السرى' aria-label='Username' aria-describedby='basic-addon1')
+
+                  
+                  a.mb-3.d-block.forget(href="") نسيت كلمة المرور ؟  
+                  button.btn.btn-submit.my-4(type='submit') 
+                    i.fas.fa-sign-in-alt 
+                    | دخول
+                  //- .d-flex.w-100.my-3 
+
+                  //-   button.btn.facebook.col.mx-2 
+                  //-     i.fab.fa-facebook-f
+                  //-   button.btn.google.col.mx-2 
+                  //-     i.fab.fa-google
+                  //-   button.btn.twitter.col.mx-2 
+                  //-     i.fab.fa-twitter
+
+
+
+              #Sign-tab-pane.tab-pane.fade(role='tabpanel' aria-labelledby='Sign-tab' tabindex='0') 
+                h4 يسعدنا الانضمام الينا
+                p الرجاء إدخال التفاصيل الخاصة بك
+                form.w-100
+                  .input-group.mb-3
+                    span#basic-addon1.input-group-text 
+                      i.fa-solid.fa-user
+                    input.form-control(type='text' placeholder='الإسم بالكامل' aria-label='Username' aria-describedby='basic-addon1')
+                  .input-group.mb-3
+                    span#basic-addon1.input-group-text
+                      i.fa-solid.fa-mobile-screen-button
+                    input.form-control(type='text' placeholder=' رقم الموبايل' aria-label='Username' aria-describedby='basic-addon1')
+                  .input-group.mb-3
+                    span#basic-addon1.input-group-text 
+                      i.fas.fa-envelope
+                    input.form-control(type='email' placeholder='الايميل' aria-label='Username' aria-describedby='basic-addon1')
+                  .input-group.mb-3
+                    span#basic-addon1.input-group-text
+                      i.fa-solid.fa-calendar-days
+                    input.form-control(type='data' placeholder=' تاريخ الميلاد' aria-label='Username' aria-describedby='basic-addon1')
+                  .input-group.mb-3
+                    span#basic-addon1.input-group-text.me-5
+                      i.fa-solid.fa-venus-mars
+                    .form-check.form-check-inline
+                      input#inlineRadio1.form-check-input(type='radio' name='inlineRadioOptions' value='option1')
+                      label.form-check-label(for='inlineRadio1')
+                        span.image 
+                          i.fa-solid.fa-person
+                        |   ذكر
+                    .form-check.form-check-inline
+                      input#inlineRadio2.form-check-input(type='radio' name='inlineRadioOptions' value='option2')
+                      label.form-check-label(for='inlineRadio2')
+                          span.image 
+                            i.fa-solid.fa-person-dress
+                          |  انثى
+
+                  .input-group.mb-3
+                    span#basic-addon1.input-group-text
+                      i.fas.fa-key
+                    input.form-control(type='password' placeholder='الرقم السرى' aria-label='Username' aria-describedby='basic-addon1')
+
+                  #accordionFlushExample.accordion.accordion-flush
+                    .accordion-item
+                      h2#flush-headingOne.accordion-header
+                        a.accordion-button.collapsed(type='button' data-bs-toggle='collapse' data-bs-target='#flush-collapseOne' aria-expanded='false' aria-controls='flush-collapseOne')
+                          i.fa-solid.fa-file-medical
+                          | الملف الطبى
+                      #flush-collapseOne.accordion-collapse.collapse(aria-labelledby='flush-headingOne' data-bs-parent='#accordionFlushExample')
+                        .accordion-body
+                          .input-group.mb-3
+                            span#basic-addon1.input-group-text 
+                              i.fa-solid.fa-text-height
+
+                            input.form-control(type='text' placeholder=' الطول' aria-label='Username' aria-describedby='basic-addon1')
+                          .input-group.mb-3
+                            span#basic-addon1.input-group-text
+                              i.fa-solid.fa-weight-scale
+
+                            input.form-control(type='text' placeholder='  الوزن' aria-label='Username' aria-describedby='basic-addon1')
+                          .input-group.mb-3
+                            span#basic-addon1.input-group-text 
+                              i.fa-solid.fa-disease
+                            input.form-control(type='email' placeholder='امراض مزمنة' aria-label='Username' aria-describedby='basic-addon1')
+                            
+                          .input-group.mb-3
+                            span#basic-addon1.input-group-text
+                              i.fa-solid.fa-virus-slash
+                            input.form-control(type='text' placeholder='  حساسية' aria-label='Username' aria-describedby='basic-addon1')
+                          .input-group.mb-3
+                            span#basic-addon1.input-group-text 
+                              i.fa-solid.fa-person-dots-from-line
+                            input.form-control(type='email' placeholder=' عمليات سابقة' aria-label='Username' aria-describedby='basic-addon1')
+                            
+
+
+                  button.btn.btn-submit.my-2(type='submit') 
+                    i.fas.fa-sign-in-alt 
+                    | دخول
+            
+    
+    include includes/footer      
+

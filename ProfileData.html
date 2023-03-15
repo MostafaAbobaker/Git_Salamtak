@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/faviconWhite.png" type="image/x-icon">
+    <link rel="icon" href="../assets/images/faviconWhite.png" type="image/x-icon">
+    <title>SALAMTEK</title>
+    <link rel="stylesheet" href="../../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+  </head>
+  <body> 
+    <nav class="navbar navbar-expand-lg text-white">
+      <div class="container"><a class="navbar-brand" href="index.html"> <img src="../assets/images/Logo.svg" alt=""></a>
+        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation"><span class="navbar-toggler-icon"></span></button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav w-100 justify-content-end">
+            <li class="nav-item"><a class="nav-link" href="index.html">الرئيسية</a></li>
+            <li class="nav-item"><a class="nav-link" href="RegistrationProvider.html">انضم الينا</a></li>
+            <li class="nav-item"><a class="nav-link" href="#" data-bs-toggle="modal" data-bs-target="#exampleModal"> دخول</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">اتصل بنا </a></li>
+            <li class="nav-item"><a class="nav-link" href="#">English  </a></li>
+            <li class="nav-item dropdown"><a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false"><i class="fa-solid fa-cart-shopping"></i></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="#">Action</a></li>
+                <li><a class="dropdown-item" href="#">Another action</a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#">Something else here</a></li>
+              </ul>
+            </li>
+            <li class="nav-item user-profile dropdown"><a class="nav-link dropdown-toggle" href="#" data-bs-toggle="dropdown" aria-expanded="false"><img src="../assets/images/user.jpg" alt=""><span class="text">Mostafa Abobaker</span></a>
+              <ul class="dropdown-menu">
+                <li><a class="dropdown-item" href="ProfileData.html"> <i class="fa-solid fa-user"></i>الملف الشخصى</a></li>
+                <li><a class="dropdown-item" href="#" data-bs-toggle="modal" data-bs-target="#notificationsModal"><i class="fa-solid fa-bell"></i>اشعارات </a></li>
+                <li><a class="dropdown-item" href="#"> <i class="fa-regular fa-calendar-check"></i>إدارة الحجوزات </a></li>
+                <li>
+                  <hr class="dropdown-divider">
+                </li>
+                <li><a class="dropdown-item" href="#"> <i class="fa-solid fa-right-from-bracket"></i>خروج</a></li>
+              </ul>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    <div class="ProfileData-page registration-page">
+      <div class="container">
+        <div class="registration-box">
+          <h3 class="text-center mb-1">الملف الشخصى</h3>
+          <div class="image-upload">
+            <div class="avatar-upload">
+              <div class="avatar-edit">
+                <input id="imageUpload" type="file" accept=".png, .jpg, .jpeg">
+                <label for="imageUpload"></label>
+              </div>
+              <div class="avatar-preview">
+                <div id="imagePreview" style="background-image: url(./assets/images/anonymous-sec-whistleblower.jpg);"></div>
+              </div>
+            </div>
+          </div>
+          <div class="content-form">
+            <div class="Tap-Global">
+              <ul class="nav nav-tabs" id="myTab" role="tablist">
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link active" id="home-tab" data-bs-toggle="tab" data-bs-target="#home-tab-pane" type="button" role="tab" aria-controls="home-tab-pane" aria-selected="true">المعلومات الاساسية</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#contact-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">بيانات الاتصال</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="profile-tab" data-bs-toggle="tab" data-bs-target="#profile-tab-pane" type="button" role="tab" aria-controls="profile-tab-pane" aria-selected="false">المعلومات الطبية</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#Emergency-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"> الطوارئ</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#Comapny-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"> المعلومات التأمين</button>
+                </li>
+                <li class="nav-item" role="presentation">
+                  <button class="nav-link" id="contact-tab" data-bs-toggle="tab" data-bs-target="#log-tab-pane" type="button" role="tab" aria-controls="contact-tab-pane" aria-selected="false"> بيانات التسجيل </button>
+                </li>
+              </ul>
+              <div class="tab-content" id="myTabContent">
+                <div class="tab-pane fade show active" id="home-tab-pane" role="tabpanel" aria-labelledby="home-tab" tabindex="0"> 
+                  <h4 class="border-bottom border-2 pb-2 mb-2 mt-2 fw-bold">المعلومات الاساسية</h4>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">الاسم بالكامل</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">الجنسية</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">الوظيفة</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group form-date-group">
+                          <label class="mb-1" for="exampleInputEmail1">تاريخ الميلاد</label>
+                          <input class="form-control form-date-control" id="exampleInputEmail1" type="date">
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">النوع</label>
+                          <div class="form-group">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" id="Man" type="radio" name="Man" value="option1">
+                              <label class="form-check-label" for="Man">ذكر</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" id="woman" type="radio" name="woman" value="option2">
+                              <label class="form-check-label" for="woman">إنثى</label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">الحالة الاجتماعية</label>
+                          <select class="form-control" id="exampleFormControlSelect1">
+                            <option>اعزب</option>
+                            <option>متزوج</option>
+                            <option>ارمل</option>
+                            <option>مطلق</option>
+                          </select>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1"> نوع الهوية</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">رقم الهوية</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">المؤهل</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*      </small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="contact-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"> 
+                  <h4 class="border-bottom border-2 pb-2 mb-2 mt-2 fw-bold">بيانات الاتصال</h4>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1"> رقم المنزل</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">رقم المحمول</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">رقم محمول اخر</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="profile-tab-pane" role="tabpanel" aria-labelledby="profile-tab" tabindex="0"> 
+                  <h4 class="border-bottom border-2 pb-2 mb-2 mt-2 fw-bold">المعلومات الطبية</h4>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1"> الطول</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">الوزن</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">امراض مزمنة</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1"> حساسية مزمنة</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1"> حساسية دواء</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">هل يوجد اعاقة</label>
+                          <div class="form-group">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" id="Man" type="radio" name="Man" value="option1">
+                              <label class="form-check-label" for="Man">نعم</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" id="woman" type="radio" name="woman" value="option2">
+                              <label class="form-check-label" for="woman">لا    </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">نوع الاعاقة</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">هل يوجد عمليات سابقة</label>
+                          <div class="form-group">
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" id="Man" type="radio" name="Man" value="option1">
+                              <label class="form-check-label" for="Man">نعم</label>
+                            </div>
+                            <div class="form-check form-check-inline">
+                              <input class="form-check-input" id="woman" type="radio" name="woman" value="option2">
+                              <label class="form-check-label" for="woman">لا       </label>
+                            </div>
+                          </div>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">اسم العملية</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="Emergency-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"> 
+                  <h4 class="border-bottom border-2 pb-2 mb-2 mt-2 fw-bold">بيانات الطوارئ</h4>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1"> اسم الشخص ( للتواصل في حالة الطوارئ )  </label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">رقم الهاتف الشخص</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">رقم الهاتف الشخص اخر</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">صالة القاربة</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="Comapny-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"> 
+                  <h4 class="border-bottom border-2 pb-2 mb-2 mt-2 fw-bold">المعلومات التأمين</h4>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1"> شركة التأمين</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">التعاقد</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">نوع التعاقد</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+                <div class="tab-pane fade" id="log-tab-pane" role="tabpanel" aria-labelledby="contact-tab" tabindex="0"> 
+                  <h4 class="border-bottom border-2 pb-2 mb-2 mt-2 fw-bold">بيانات التسجيل</h4>
+                  <div class="container-fluid">
+                    <div class="row">
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1"> الرقم السرى الحالى</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">الرقم السرى جديد</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                      <div class="col-lg-4 col-md-6 col-sm-12 mb-3">
+                        <div class="form-group">
+                          <label class="mb-1" for="exampleInputEmail1">تأكيد السرى</label>
+                          <input class="form-control" id="exampleInputEmail1" type="text" required=""><small class="form-text text-required">*</small>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/js/jquery-3.6.3.min.js"> </script>
+    <script src="../assets/js/popper.min.js"> </script>
+    <script src="../assets/js/bootstrap.min.js"> </script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

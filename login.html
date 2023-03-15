@@ -1,0 +1,107 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+  <head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="../assets/images/faviconWhite.png" type="image/x-icon">
+    <link rel="icon" href="../assets/images/faviconWhite.png" type="image/x-icon">
+    <title>SALAMTEK</title>
+    <link rel="stylesheet" href="../../assets/css/fontawesome.min.css">
+    <link rel="stylesheet" href="../../assets/css/bootstrap.rtl.min.css">
+    <link rel="stylesheet" href="../../assets/css/style.css">
+  </head>
+  <body> 
+    <div class="log-page"> 
+      <div class="container"> 
+        <div class="col-6 text-center">
+          <div class="form-action"> <a class="image mb-3 d-block" href="index.html"> <img src="../assets/images/logo.png" alt=""></a>
+            <ul class="nav nav-tabs" id="myTab" role="tablist">
+              <li class="nav-item col-6" role="presentation"><a class="nav-link active" id="log-tab" data-bs-toggle="tab" data-bs-target="#log-tab-pane" type="button" role="tab" aria-controls="log-tab-pane" aria-selected="true"> 
+                  <div class="image"> <i class="fas fa-sign-in-alt"> </i></div>
+                  <div class="text">دخول </div></a></li>
+              <li class="nav-item col-6" role="presentation"><a class="nav-link" id="Sign-tab" data-bs-toggle="tab" data-bs-target="#Sign-tab-pane" type="button" role="tab" aria-controls="Sign-tab-pane" aria-selected="false"> 
+                  <div class="image"> <i class="fas fa-user-plus"></i></div>
+                  <div class="text">تسجيل </div></a></li>
+            </ul>
+            <div class="tab-content" id="myTabContent">
+              <div class="tab-pane fade show active" id="log-tab-pane" role="tabpanel" aria-labelledby="log-tab" tabindex="0"> 
+                <h4>مرحبا بعودتك </h4>
+                <p>الرجاء إدخال التفاصيل الخاصة بك</p>
+                <form class="w-100">
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"> <i class="fas fa-envelope"></i></span>
+                    <input class="form-control" type="email" placeholder="الايميل" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
+                    <input class="form-control" type="password" placeholder="الرقم السرى" aria-label="Username" aria-describedby="basic-addon1">
+                  </div><a class="mb-3 d-block forget" href="">نسيت كلمة المرور ؟  </a>
+                  <button class="btn btn-submit my-4" type="submit"> <i class="fas fa-sign-in-alt"> </i>دخول</button>
+                </form>
+              </div>
+              <div class="tab-pane fade" id="Sign-tab-pane" role="tabpanel" aria-labelledby="Sign-tab" tabindex="0"> 
+                <h4>يسعدنا الانضمام الينا</h4>
+                <p>الرجاء إدخال التفاصيل الخاصة بك</p>
+                <form class="w-100">
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-user"></i></span>
+                    <input class="form-control" type="text" placeholder="الإسم بالكامل" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-mobile-screen-button"></i></span>
+                    <input class="form-control" type="text" placeholder=" رقم الموبايل" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"> <i class="fas fa-envelope"></i></span>
+                    <input class="form-control" type="email" placeholder="الايميل" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-calendar-days"></i></span>
+                    <input class="form-control" type="data" placeholder=" تاريخ الميلاد" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text me-5" id="basic-addon1"><i class="fa-solid fa-venus-mars"></i></span>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" id="inlineRadio1" type="radio" name="inlineRadioOptions" value="option1">
+                      <label class="form-check-label" for="inlineRadio1"><span class="image"> <i class="fa-solid fa-person"></i></span>  ذكر</label>
+                    </div>
+                    <div class="form-check form-check-inline">
+                      <input class="form-check-input" id="inlineRadio2" type="radio" name="inlineRadioOptions" value="option2">
+                      <label class="form-check-label" for="inlineRadio2"><span class="image"> <i class="fa-solid fa-person-dress"></i></span> انثى</label>
+                    </div>
+                  </div>
+                  <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"><i class="fas fa-key"></i></span>
+                    <input class="form-control" type="password" placeholder="الرقم السرى" aria-label="Username" aria-describedby="basic-addon1">
+                  </div>
+                  <div class="accordion accordion-flush" id="accordionFlushExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="flush-headingOne"><a class="accordion-button collapsed" type="button" data-bs-toggle="collapse" data-bs-target="#flush-collapseOne" aria-expanded="false" aria-controls="flush-collapseOne"><i class="fa-solid fa-file-medical"></i>الملف الطبى</a></h2>
+                      <div class="accordion-collapse collapse" id="flush-collapseOne" aria-labelledby="flush-headingOne" data-bs-parent="#accordionFlushExample">
+                        <div class="accordion-body">
+                          <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-text-height"></i></span>
+                            <input class="form-control" type="text" placeholder=" الطول" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-weight-scale"></i></span>
+                            <input class="form-control" type="text" placeholder="  الوزن" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-disease"></i></span>
+                            <input class="form-control" type="email" placeholder="امراض مزمنة" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"><i class="fa-solid fa-virus-slash"></i></span>
+                            <input class="form-control" type="text" placeholder="  حساسية" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                          <div class="input-group mb-3"><span class="input-group-text" id="basic-addon1"> <i class="fa-solid fa-person-dots-from-line"></i></span>
+                            <input class="form-control" type="email" placeholder=" عمليات سابقة" aria-label="Username" aria-describedby="basic-addon1">
+                          </div>
+                        </div>
+                      </div>
+                    </div>
+                  </div>
+                  <button class="btn btn-submit my-2" type="submit"> <i class="fas fa-sign-in-alt"> </i>دخول</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="../assets/js/jquery-3.6.3.min.js"> </script>
+    <script src="../assets/js/popper.min.js"> </script>
+    <script src="../assets/js/bootstrap.min.js"> </script>
+    <script src="../assets/js/main.js"></script>
+  </body>
+</html>

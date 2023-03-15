@@ -1,0 +1,105 @@
+// Start Login
+.log-page {
+  background: url(../images/bg-login.png) no-repeat left center;
+  background-size: 50%;
+  height: 100vh;
+
+  .form-action {
+    padding: 20px;
+
+    .nav-tabs {
+      .nav-item {
+        .nav-link {
+          display: flex;
+          justify-content: center;
+          border: none;
+          color: #333;
+
+          .image {
+            margin-inline-end: 10px;
+          }
+
+          &.active {
+            background-color: $mColor;
+            color: #fff;
+          }
+        }
+      }
+    }
+
+    .tab-content {
+      padding: 20px;
+      height: 75vh;
+      overflow-y: auto;
+
+      form {
+        text-align: start;
+        direction: rtl;
+
+        .input-group {
+          text-align: start;
+
+          .input-group-text {
+            background-color: $mColor;
+            color: #fff;
+          }
+
+          .form-control {
+            direction: rtl;
+            text-align: start;
+          }
+        }
+
+        .forget {
+          display: block;
+          color: #333;
+          text-decoration: none;
+        }
+
+        .btn-submit {
+          background-color: $sColor;
+          border-color: $sColor;
+          color: #fff;
+          width: 100%;
+
+          i {
+            margin-inline-end: 10px;
+          }
+        }
+
+        .facebook {
+          background-color: #1877F2;
+          color: #fff;
+        }
+
+        .google {
+          background-color: #EA4335;
+          color: #fff;
+        }
+
+        .twitter {
+          background-color: #1DA1F2;
+          color: #fff;
+        }
+      }
+
+      .accordion {
+        .accordion-header {
+          border-bottom: 2px solid $mColor;
+
+          .accordion-button {
+
+            text-decoration: none;
+            color: $mColor;
+
+            &:not(.collapsed) {
+              background-color: transparent;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+// End Login
